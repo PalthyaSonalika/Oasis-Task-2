@@ -6,55 +6,55 @@ public class Main
     {   int i;
         Scanner sc=new Scanner(System.in);
         Random r=new Random();
-        int RN=r.nextInt(100)+1;
-        System.out.println("A number Between 1 to 100");
+        int rn=r.nextInt(100)+1;
+        System.out.println("A Number Between 1 to 100");
         for(i=1;i<=5;i++)
         { 
             System.out.println("Guess The Number:");
             int num=sc.nextInt();
-            if(num>RN)
+            if(num>rn)
             {
-                int d=num-RN;
-                if(d>=20)
+                int g=num-rn;
+                if(g>=20)
                 {
-                    System.out.println("OOPS! Too High :) Try Again");
+                    System.out.println("Ohhh!! Too High :: Try Again");
                 }
                 else
                 {
-                    if(d<5)
+                    if(g<5)
                     {
-                        System.out.println("Too Close:) Little Lower");
+                        System.out.println("Too Close:: Little Lower");
                     }
                     else
                     {
                         System.out.println("Guess a number lower Than Previous");
                     }
                 }
-                System.out.println("You Have " + (5-i) + " Tries Remaining");
+                System.out.println("You Have " + (5-i) + " More Tries Remaining");
             }
-            else if(num<RN)
+            else if(num<rn)
             {
-                int d=RN-num;
-                if(d>=20)
+                int g=rn-num;
+                if(g>=20)
                 {
-                    System.out.println("OOPS! Too Low :) Try Again");
+                    System.out.println("Ohhh!! Too Low :: Try Again");
                 }
                 else
                 {
-                    if(d<5)
+                    if(g<5)
                     {
-                        System.out.println("Too Close:) Little Higher");
+                        System.out.println("Too Close:: Little Higher");
                     }
                     else
                     {
                         System.out.println("Guess a number Higher Than Previous");
                     }
                 }
-                System.out.println("You Have " + (5-i) + " Tries Remaining");
+                System.out.println("You Have " + (5-i) + " More Tries Remaining");
             }
             else
             {
-                System.out.println("Congratulations!!! You Have Guessed the correct Number");
+                System.out.println("Congratulations!!! You Have Guessed the Correct Number");
                 System.out.println("You Guessed in " + i +" Tries");
                 System.out.println("Your Score is: " + ((5-i)*20));
                 break;
@@ -63,7 +63,7 @@ public class Main
         if(i>5)
         {
             System.out.println("You Have Exceeded Maximum Tries:(");
-            System.out.println("The Number is: " + RN);
+            System.out.println("The Number is: " + rn);
         }
     }
 
